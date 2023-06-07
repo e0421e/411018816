@@ -1,7 +1,8 @@
-﻿CREATE TABLE [dbo].[Student]
-(
-	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
-	[Name] NVARCHAR(10) NOT NULL,
-	[Number] NVARCHAR(10) NOT NULL,
-	[Email] NVARCHAR(50) NOT NULL
-)
+﻿CREATE TABLE [dbo].[Table] (
+    [Id]          INT            NOT NULL,
+    [Title]       NVARCHAR (50)  NOT NULL,
+    [Content]     NVARCHAR (500) NOT NULL,
+    [PublishDate] DATETIME2 (7)  NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
